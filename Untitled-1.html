@@ -1,0 +1,25 @@
+<html>
+<head>
+    <style> html{
+        background:linear-gradient(to right, rgb(255, 150, 30) 0%,deepskyblue 100%);
+        }
+        input,button,span{ margin-top:10px; padding:5px;
+         font-size:20px;
+        }
+        </style>
+        
+</head>
+<script type="text/javascript"> function validate()
+{var pattern=/[0-9][0-9][A-Z][A-Z][0-9][0-9]$/;
+rollno = document.getElementById('rollno'); if( !rollno.value.match(pattern))
+alert("Error : Invalid Roll No"); else
+alert("Success");
+}
+</script>
+<body>
+<form>
+<span>Enter Roll No:</span> <input type="text" id="rollno" />
+<input type="submit" value="Check" onclick="validate()"/>
+</form>
+</body>
+</html>
